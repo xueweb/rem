@@ -23,9 +23,9 @@ const banner =
 
 const builds = [{
   entry: resolve('src/index.js'),
-  dest: resolve('dist/bscroll.js'),
+  dest: resolve('dist/rem.js'),
   format: 'umd',
-  moduleName: 'BScroll',
+  moduleName: 'rem',
   plugins: [
     babel({
       exclude: 'node_modules/**' // only transpile our source code
@@ -34,9 +34,9 @@ const builds = [{
   banner
 }, {
   entry: resolve('src/index.js'),
-  dest: resolve('dist/bscroll.esm.js'),
+  dest: resolve('dist/rem.esm.js'),
   format: 'es',
-  moduleName: 'BScroll',
+  moduleName: 'rem',
   plugins: [
     babel({
       exclude: 'node_modules/**' // only transpile our source code
@@ -45,9 +45,9 @@ const builds = [{
   banner
 }, {
   entry: resolve('src/index.js'),
-  dest: resolve('dist/bscroll.min.js'),
+  dest: resolve('dist/rem.min.js'),
   format: 'umd',
-  moduleName: 'BScroll',
+  moduleName: 'rem',
   plugins: [
     babel({
       exclude: 'node_modules/**' // only transpile our source code
